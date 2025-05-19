@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1><i class="fas fa-brain"></i> JavaScript Quiz</h1>
+            <div class="quiz-info">
+                <span id="question-count">Question 1/10</span>
+                <span id="score">Score: 0</span>
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+        
+        <div class="quiz-body">
+            <div id="timer">
+                <i class="fas fa-clock"></i> <span id="time">30</span>s
+            </div>
+            <h2 id="question">Loading question...</h2>
+            <div id="options-container"></div>
+        </div>
+        
+        <div class="quiz-footer">
+            <button id="next-btn" disabled>Next Question <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="result-container hidden">
+        <div class="result-content">
+            <h2>Quiz Completed!</h2>
+            <div class="result-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <p id="final-score">You scored 0 out of 10</p>
+            <p id="performance-message">Keep practicing!</p>
+            <button id="restart-btn"><i class="fas fa-redo"></i> Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
